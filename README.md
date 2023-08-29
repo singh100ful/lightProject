@@ -13,3 +13,5 @@
 **Step 6:** If you have android device connect your android device to your system and run using `yarn android`.
 
 **Step 7:** Optionally you can also enable wireless debugging with ADB without having to connect the android device physically.
+
+**Step 8:** Use Username: admin and password: 123456789 to login.
