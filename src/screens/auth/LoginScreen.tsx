@@ -6,16 +6,19 @@ import {ButtonAtom} from '../../components/atoms/ButtonAtom';
 import {TextAtom} from '../../components/atoms/TextAtom';
 import {ColorPresets} from '../../theme/color';
 import {loginInfo} from '../../constants/appContants';
+import {GenericNavigation} from '../../navigation/AppNavigation';
+import {Routekeys} from '../../navigation/Routekeys';
 
-interface LoginScreenProps {}
+interface LoginScreenProps extends GenericNavigation {}
 
-export const LoginScreen: React.FC<LoginScreenProps> = ({}) => {
+export const LoginScreen: React.FC<LoginScreenProps> = ({navigation}) => {
   const [username, setUsername] = React.useState('');
   const [password, setPassword] = React.useState('');
 
   const handleSubmit = () => {
     if (loginInfo.username === username && loginInfo.password === password) {
-      Alert.alert('Congratulations', 'Login Successful');
+      // Alert.alert('Congratulations', 'Login Successful');
+      navigation.navigate(Routekeys.HomeScreen);
     } else {
       Alert.alert('Oops', 'Login failed');
     }

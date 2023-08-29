@@ -29,7 +29,7 @@ export const fontTypes = {
   black,
 };
 
-const scaleFont = (size: number, height: number = 1.3) => {
+export const scaleFont = (size: number, height: number = 1.3) => {
   const result = size + (scaleSize(size) - size) * 0.5;
   return {
     fontSize: result,
