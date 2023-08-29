@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Atom renders correctly with placeholder 1`] = `
+<View>
+  <Text
+    style={
+      [
+        {
+          "color": "#000000",
+          "flexShrink": 1,
+          "flexWrap": "wrap",
+        },
+        undefined,
+      ]
+    }
+  >
+    Label
+  </Text>
+  <TextInput
+    placeholder="Enter text"
+    placeholderTextColor="#949494"
+    style={
+      {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 7.708333333333334,
+        "borderWidth": 1,
+        "paddingHorizontal": 15.416666666666668,
+        "paddingVertical": 15.416666666666668,
+      }
+    }
+  />
+</View>
+`;
